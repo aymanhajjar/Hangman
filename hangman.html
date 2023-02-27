@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link href="css/hangman.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="categories">
+            <button id="food" onclick="changeCategory('food')">Food</button>
+            <button id="countries" onclick="changeCategory('countries')">Countries</button>
+            <button id="music" onclick="changeCategory('music')">Music</button>
+            <button id="sports" onclick="changeCategory('sports')">Sports</button>
+        </div>
+        <div class="game">
+            <div class="controls">
+                <div class="word" id="word">Choose a category!</div>
+                <div class="status" id="status"></div>
+                <div class="keyboard inactiveBtn" id="keyboard">
+                    <div class="row row1">
+                        <button class="keyBtn" id="q" onclick="checkLetter('q')">Q</button>
+                        <button class="keyBtn" id="w" onclick="checkLetter('w')">W</button>
+                        <button class="keyBtn" id="e" onclick="checkLetter('e')">E</button>
+                        <button class="keyBtn" id="r" onclick="checkLetter('r')">R</button>
+                        <button class="keyBtn" id="t" onclick="checkLetter('t')">T</button>
+                        <button class="keyBtn" id="y" onclick="checkLetter('y')">Y</button>
+                        <button class="keyBtn" id="u" onclick="checkLetter('u')">U</button>
+                        <button class="keyBtn" id="i" onclick="checkLetter('i')">I</button>
+                        <button class="keyBtn" id="o" onclick="checkLetter('o')">O</button>
+                        <button class="keyBtn" id="p" onclick="checkLetter('p')">P</button>
+                    </div>
+                    <div class="row row2">
+                        <button class="keyBtn" id="a" onclick="checkLetter('a')">A</button>
+                        <button class="keyBtn" id="s" onclick="checkLetter('s')">S</button>
+                        <button class="keyBtn" id="d" onclick="checkLetter('d')">D</button>
+                        <button class="keyBtn" id="f" onclick="checkLetter('f')">F</button>
+                        <button class="keyBtn" id="g" onclick="checkLetter('g')">G</button>
+                        <button class="keyBtn" id="h" onclick="checkLetter('h')">H</button>
+                        <button class="keyBtn" id="j" onclick="checkLetter('j')">J</button>
+                        <button class="keyBtn" id="k" onclick="checkLetter('k')">K</button>
+                        <button class="keyBtn" id="l" onclick="checkLetter('l')">L</button>
+                    </div>
+                    <div class="row row3">
+                        <button class="keyBtn" id="z" onclick="checkLetter('z')">Z</button>
+                        <button class="keyBtn" id="x" onclick="checkLetter('x')">X</button>
+                        <button class="keyBtn" id="c" onclick="checkLetter('c')">C</button>
+                        <button class="keyBtn" id="v" onclick="checkLetter('v')">V</button>
+                        <button class="keyBtn" id="b" onclick="checkLetter('b')">B</button>
+                        <button class="keyBtn" id="n" onclick="checkLetter('n')">N</button>
+                        <button class="keyBtn" id="m" onclick="checkLetter('m')">M</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="image" >
+                <img id="image" src="images/hangman.png">
+            </div>
+        </div>
+    </div>
+    <script src="js/hangman.js"></script>
+</body>
+</html>
